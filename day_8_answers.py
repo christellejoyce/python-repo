@@ -1,3 +1,30 @@
+# Exercise 1 - Paint Area Calculator
+
+import math 
+
+def paint_calc(height, width, cover):
+    area = height * width
+    num_of_cans = math.ceil(area / cover)
+    print(f"You'll need {num_of_cans} cans of paint")
+
+
+# Exercise 2 - Prime Number Checker
+
+def prime_checker(number):
+    isPrime = True
+    for i in range(2, number):
+        if number % i == 0:
+            isPrime = False
+    if isPrime:
+        print ("It's a prime number.")
+    else:
+        print ("It's not a prime number.")
+        
+n = int(input("Check this number: "))
+prime_checker(number=n)
+
+# Day 8 Project - Caesar Cipher
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def caesar(start_text, shift_amount, cipher_direction):
